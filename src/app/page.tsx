@@ -5,7 +5,7 @@ import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col min-h-screen items-center">
+    <div className="relative flex flex-col min-h-[calc(100dvh)] items-center">
       <main className="flex-1 flex flex-col items-center justify-center p-4">
         <h1 className="text-xl sm:text-3xl lg:text-4xl text-center font-semibold flex items-center tracking-wider">
           <motion.div
