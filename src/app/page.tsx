@@ -12,7 +12,7 @@ export default function Home() {
             className="z-10 bg-neutral-300 p-2"
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.1 }}
+            transition={{ duration: 0.25, type: "spring", bounce: 0.25 }}
           >
             MARK H MENDEZ
           </motion.div>
@@ -20,7 +20,7 @@ export default function Home() {
             className="overflow-hidden"
             initial={{ opacity: 0, x: -120 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.2 }}
+            transition={{ delay: 1, duration: 0.25, type: "spring", bounce: 0.25  }}
           >
             GROUP
           </motion.div>

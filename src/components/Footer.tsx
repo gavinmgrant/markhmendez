@@ -1,8 +1,9 @@
+import { motion } from "framer-motion"
 import {
   TbBrandLinkedin,
   TbBrandInstagram,
   TbBrandTiktok,
-  TbCircleFilled,
+  TbMinusVertical,
 } from "react-icons/tb"
 
 const Footer = () => {
@@ -10,7 +11,12 @@ const Footer = () => {
 
   return (
     <footer className="absolute bottom-4 px-4">
-      <div className="pb-4 text-center text-xs flex items-center justify-center gap-3">
+      <motion.div
+        className="pb-6 text-center text-xs flex items-center justify-center gap-3 sm:gap-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2.25, duration: 0.5 }}
+      >
         <a
           href="https://www.linkedin.com/in/markhmendez/"
           target="_blank"
@@ -32,8 +38,13 @@ const Footer = () => {
         >
           <TbBrandTiktok className="w-7 h-7 sm:w-8 sm:h-8 hover:text-black hover:scale-105 transition duration-250" />
         </a>
-      </div>
-      <div className="text-center sm:flex-row flex-col text-xs flex items-center justify-center gap-1 sm:gap-2">
+      </motion.div>
+      <motion.div
+        className="text-center sm:flex-row flex-col text-xs flex items-center justify-center gap-1 sm:gap-2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2.5, duration: 0.5 }}
+      >
         <p className="flex items-center gap-2">
           <a
             className="hover:text-black hover:scale-105 transition duration-250"
@@ -43,12 +54,12 @@ const Footer = () => {
           >
             Compass
           </a>
-          <TbCircleFilled className="h-2 w-2" />
+          <TbMinusVertical className="h-4 w-4" />
           <span>DRE# 01974201</span>
         </p>
-        <TbCircleFilled className="h-2 w-2 hidden sm:block" />
+        <TbMinusVertical className="h-4 w-4 hidden sm:block" />
         <p>&copy; {currentYear} Mark Mendez. All rights reserved.</p>
-      </div>
+      </motion.div>
     </footer>
   )
 }
