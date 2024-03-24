@@ -1,67 +1,65 @@
-import { motion } from "framer-motion"
+import InlineFlodeskForm from "@/components/InlineFlodeskForm";
 import {
   TbBrandLinkedin,
   TbBrandInstagram,
   TbBrandTiktok,
   TbMinusVertical,
-} from "react-icons/tb"
+  TbMail,
+} from "react-icons/tb";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="absolute bottom-4 px-4">
-      <motion.div
-        className="pb-6 text-center text-xs flex items-center justify-center gap-3 sm:gap-4"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.25, duration: 0.5 }}
-      >
-        <a
-          href="https://www.linkedin.com/in/markhmendez/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <TbBrandLinkedin className="w-7 h-7 sm:w-8 sm:h-8 hover:text-black hover:scale-105 transition duration-250" />
-        </a>
-        <a
-          href="https://www.instagram.com/markhmendez/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <TbBrandInstagram className="w-7 h-7 sm:w-8 sm:h-8 hover:text-black hover:scale-105 transition duration-250" />
-        </a>
-        <a
-          href="https://www.tiktok.com/@markhmendez/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <TbBrandTiktok className="w-7 h-7 sm:w-8 sm:h-8 hover:text-black hover:scale-105 transition duration-250" />
-        </a>
-      </motion.div>
-      <motion.div
-        className="text-center sm:flex-row flex-col text-xs flex items-center justify-center gap-1 sm:gap-2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5, duration: 0.5 }}
-      >
-        <p className="flex items-center gap-2">
+    <footer className="w-full">
+      <InlineFlodeskForm />
+
+      <div className="block w-full px-6 pt-16 pb-6">
+        <div className="flex items-center justify-center gap-4 pb-6 text-center text-xs sm:gap-6">
           <a
-            className="hover:text-black hover:scale-105 transition duration-250"
-            href="https://www.compass.com/agents/mark-mendez/"
+            href="https://www.linkedin.com/in/markhmendez/"
             target="_blank"
             rel="noreferrer"
           >
-            Compass
+            <TbBrandLinkedin className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />
           </a>
-          <TbMinusVertical className="h-4 w-4" />
-          <span>DRE# 01974201</span>
-        </p>
-        <TbMinusVertical className="h-4 w-4 hidden sm:block" />
-        <p>&copy; {currentYear} Mark Mendez. All rights reserved.</p>
-      </motion.div>
+          <a
+            href="https://www.instagram.com/markhmendez/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TbBrandInstagram className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@markhmendez/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TbBrandTiktok className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />
+          </a>
+          <a href="mailto:mark.mendez@compass.com">
+            <TbMail className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />
+          </a>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-1 text-center text-xs sm:flex-row sm:gap-2">
+          <p className="flex items-center gap-2">
+            <a
+              className="transition duration-250 hover:scale-105 hover:text-neutral-900"
+              href="https://www.compass.com/agents/mark-mendez/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Compass
+            </a>
+            <TbMinusVertical className="h-4 w-4" />
+            <span>DRE# 01974201</span>
+          </p>
+          <TbMinusVertical className="hidden h-4 w-4 sm:block" />
+          <p>&copy; {currentYear} Mark Mendez. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
