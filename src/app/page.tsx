@@ -17,6 +17,7 @@ export default function Home() {
             width={400}
             height={400}
             alt="Mark H Mendez"
+            priority={true}
           />
           <div className="space-y-1 text-sm sm:text-lg">
             <p>Los Angeles Realtor</p>
