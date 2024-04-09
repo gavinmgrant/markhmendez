@@ -8,7 +8,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   const title = "Mark H Mendez";
-  const description = "Los Angeles Realtor with a focus on Selling Architectural Homes";
+  const description =
+    "Los Angeles Realtor with a focus on Selling Architectural Homes";
 
   return (
     <div className="relative flex flex-col items-center">
@@ -32,10 +33,8 @@ export default function Home() {
             alt={title}
             priority={true}
           />
-          <div className="space-y-1 text-sm sm:text-lg">
-            <p>
-              {description}
-            </p>
+          <div className="space-y-1 text-center text-sm sm:text-left sm:text-lg">
+            <p>{description}</p>
           </div>
         </div>
       </main>

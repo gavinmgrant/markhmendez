@@ -1,3 +1,4 @@
+import Link from "next/link";
 import InlineFlodeskForm from "@/components/InlineFlodeskForm";
 import {
   TbBrandLinkedin,
@@ -14,8 +15,16 @@ const Footer = () => {
     <footer className="w-full">
       <InlineFlodeskForm />
 
-      <div className="block w-full px-6 pt-16 pb-6">
-        <div className="flex items-center justify-center gap-4 pb-6 text-center text-xs sm:gap-6">
+      <div className="block w-full px-6 pb-6 pt-16">
+        <nav className="w-full flex items-center justify-center">
+          <ul className="flex items-center gap-2 text-sm sm:text-base">
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="flex items-center justify-center gap-4 py-8 text-center text-xs sm:gap-6">
           <a
             href="https://www.linkedin.com/in/markhmendez/"
             target="_blank"
@@ -41,6 +50,7 @@ const Footer = () => {
             <TbMail className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />
           </a>
         </div>
+
         <div className="flex flex-col items-center justify-center gap-1 text-center text-xs sm:flex-row sm:gap-2">
           <p className="flex items-center gap-2">
             <a
