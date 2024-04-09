@@ -2,9 +2,12 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex w-full items-center justify-between p-6">
-      <Link href="/">
-        <h1 className="text-base font-semibold tracking-widest sm:text-xl">
+    <div className="relative flex w-full items-center justify-end p-6">
+      <Link
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"
+        href="/"
+      >
+        <h1 className="text-center text-base font-semibold tracking-widest sm:text-xl">
           MARK H MENDEZ GROUP
         </h1>
       </Link>
