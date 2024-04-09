@@ -25,7 +25,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex min-h-[calc(100vh-72px)] items-center justify-center px-6 pb-6 sm:min-h-[calc(100vh-76px)]">
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-8">
+        <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
           <Image
             src="/img/markhmendez.jpeg"
             width={400}
@@ -33,7 +33,7 @@ export default function Home() {
             alt={title}
             priority={true}
           />
-          <div className="space-y-1 text-center text-sm sm:text-left sm:text-lg">
+          <div className="space-y-1 text-center text-sm sm:text-left sm:text-base lg:text-lg">
             <p>{description}</p>
           </div>
         </div>
