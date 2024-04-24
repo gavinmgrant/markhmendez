@@ -58,7 +58,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="flex w-screen flex-col justify-center lg:min-h-screen">
+    <div className="mb-16 flex w-screen flex-col justify-center lg:min-h-screen">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -66,7 +66,7 @@ const Reviews = () => {
         responsive={responsive}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={4000}
+        autoPlaySpeed={10000}
         keyBoardControl={true}
         customTransition="transform 1000ms ease-in-out"
         transitionDuration={1000}
