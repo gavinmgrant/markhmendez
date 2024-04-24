@@ -36,11 +36,9 @@ const InlineFlodeskForm = () => {
   }, []);
 
   return (
-    <div className="flex w-full flex-col items-center justify-center bg-white">
+    <div className="flex w-full flex-col items-center justify-start bg-white md:h-[198px]">
       <div className="z-10 -mb-4 space-y-2 px-6 pt-[30px] text-center sm:-mb-8">
-        <p className="text-xl font-medium sm:text-2xl">
-          Join our mailing list
-        </p>
+        <p className="text-xl font-medium sm:text-2xl">Join our mailing list</p>
         <p className="text-sm sm:text-base">
           Track the newest architectural homes for sale
         </p>

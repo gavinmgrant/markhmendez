@@ -4,6 +4,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -38,6 +39,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <Reviews />
 
       <Footer />
     </div>
