@@ -25,7 +25,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="flex items-center justify-center px-6 py-32">
+      <main className="flex items-center justify-center px-6 py-12 lg:py-16">
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
           <Image
             src="/img/markhmendez.jpeg"

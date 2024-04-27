@@ -58,7 +58,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="flex w-screen flex-col justify-center pb-32">
+    <div className="flex w-screen flex-col justify-center pb-12 lg:pb-16">
       <Carousel
         swipeable={true}
         draggable={true}
