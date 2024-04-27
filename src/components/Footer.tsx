@@ -4,6 +4,7 @@ import {
   TbBrandLinkedin,
   TbBrandInstagram,
   TbBrandTiktok,
+  TbBrandYoutube,
   TbMinusVertical,
   TbMail,
 } from "react-icons/tb";
@@ -16,7 +17,7 @@ const Footer = () => {
       <InlineFlodeskForm />
 
       <div className="block w-full px-6 pb-6 pt-16">
-        <nav className="w-full flex items-center justify-center">
+        <nav className="flex w-full items-center justify-center">
           <ul className="flex items-center gap-2 text-sm sm:text-base">
             <li>
               <Link href="/about">About</Link>
@@ -45,6 +46,13 @@ const Footer = () => {
             rel="noreferrer"
           >
             <TbBrandTiktok className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />
+          </a>
+          <a
+            href="https://www.youtube.com/@markhmendez/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TbBrandYoutube className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />
           </a>
           <a href="mailto:mark.mendez@compass.com">
             <TbMail className="h-7 w-7 transition duration-250 hover:scale-105 hover:text-neutral-900 sm:h-8 sm:w-8" />

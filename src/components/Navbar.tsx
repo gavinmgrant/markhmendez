@@ -7,7 +7,7 @@ const Navbar = () => {
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"
         href="/"
       >
-        <h1 className="w-screen text-center text-base font-semibold tracking-widest sm:w-[400px] sm:text-xl">
+        <h1 className="w-screen text-center text-base font-semibold tracking-widest sm:w-[400px] sm:text-xl lg:text-2xl">
           MARK H MENDEZ GROUP
         </h1>
       </Link>

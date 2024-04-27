@@ -25,12 +25,12 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="flex min-h-[calc(100vh-72px)] items-center justify-center px-6 pb-6 sm:min-h-[calc(100vh-76px)]">
+      <main className="flex items-center justify-center px-6 py-32">
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
           <Image
             src="/img/markhmendez.jpeg"
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             alt={title}
             priority={true}
           />
