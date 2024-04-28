@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   const title = "Mark H Mendez";
   const description =
-    "Los Angeles Realtor with a focus on Selling Architectural Homes";
+    "Los Angeles Realtor with a focus on selling architectural homes";
 
   return (
     <div className="relative flex flex-col items-center">
@@ -53,8 +53,8 @@ export default function Home() {
             alt={title}
             priority={true}
           />
-          <div className="fade-in-up space-y-1 text-center text-sm sm:text-left sm:text-base lg:text-lg">
-            <p>{description}</p>
+          <div className="fade-in space-y-1 overflow-hidden text-center text-sm sm:text-left sm:text-base lg:text-lg">
+            <p className="fade-in-up">{description}</p>
           </div>
         </div>
       </main>
