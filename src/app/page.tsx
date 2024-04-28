@@ -46,13 +46,14 @@ export default function Home() {
       <main className="flex items-center justify-center px-6 py-12 lg:py-16">
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
           <Image
+            className="fade-in"
             src="/img/markhmendez.jpeg"
             width={500}
             height={500}
             alt={title}
             priority={true}
           />
-          <div className="space-y-1 text-center text-sm sm:text-left sm:text-base lg:text-lg">
+          <div className="fade-in-up space-y-1 text-center text-sm sm:text-left sm:text-base lg:text-lg">
             <p>{description}</p>
           </div>
         </div>
