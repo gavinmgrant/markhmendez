@@ -44,15 +44,17 @@ export default function Home() {
       <Navbar />
 
       <main className="flex items-center justify-center px-6 py-12 lg:py-16">
-        <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
-          <Image
-            className="fade-in"
-            src="/img/markhmendez.jpeg"
-            width={500}
-            height={500}
-            alt={title}
-            priority={true}
-          />
+        <div className="flex flex-col items-center gap-4 lg:gap-6">
+          <div className="sm:h-[480px] sm:w-[480px] lg:h-[540px] lg:w-[540px] ">
+            <Image
+              className="fade-in"
+              src="/img/markhmendez.jpeg"
+              width={600}
+              height={600}
+              alt={title}
+              priority={true}
+            />
+          </div>
           <div className="fade-in space-y-1 overflow-hidden text-center text-sm sm:text-left sm:text-base lg:text-lg">
             <p className="fade-in-up">{description}</p>
           </div>
