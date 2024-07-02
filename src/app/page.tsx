@@ -43,7 +43,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="flex items-center justify-center px-6 py-12 lg:py-16">
+      <main className="flex items-center justify-center px-4 py-12 sm:px-6 lg:py-16">
         <div className="flex flex-col items-center gap-4 lg:gap-6">
           <div className="sm:h-[480px] sm:w-[480px] lg:h-[540px] lg:w-[540px] ">
             <Image
