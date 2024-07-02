@@ -11,7 +11,7 @@ const Navbar = () => {
 
       <div className="flex items-center sm:gap-6">
         <a
-          className="shrink-0 rounded px-2 py-1 text-sm font-medium outline outline-1 sm:px-3 sm:text-base"
+          className="shrink-0 px-2 py-1.5 text-sm font-medium outline outline-1 sm:px-3 sm:text-base"
           href="tel:310-621-2531"
         >
           310-621-2531
